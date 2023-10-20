@@ -1,0 +1,498 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1411799289139307332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9138179058311089183}
+  - component: {fileID: 6200757981677214478}
+  - component: {fileID: 8072575672776285670}
+  - component: {fileID: 7807458773999734093}
+  - component: {fileID: 7705479451836844394}
+  - component: {fileID: 5757074094562293878}
+  - component: {fileID: 8027544880386982102}
+  - component: {fileID: 1412129339430949034}
+  - component: {fileID: 6199312969479087659}
+  - component: {fileID: 3542256447735377143}
+  - component: {fileID: 2564134140772056205}
+  - component: {fileID: 2057579397532293117}
+  - component: {fileID: 8186256075883198765}
+  - component: {fileID: 3491509395341115463}
+  - component: {fileID: 9037230709948006434}
+  - component: {fileID: 1873235841597113426}
+  m_Layer: 0
+  m_Name: ExampleDemoDialogHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9138179058311089183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 405.41907, y: 56.73619, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6200757981677214478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e6411ff73c361478f07a5d035b040a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogTreeId: StarterDemoTree
+  starterNode: {fileID: 8072575672776285670}
+  dialogType: 0
+  overrideStarterNode: 0
+  deleteOverriden: 0
+--- !u!114 &8072575672776285670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: Hey this is dialog
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 7807458773999734093}
+  spawnedDialogType: 0
+  overrideExistingNode: 0
+  deleteOverriden: 0
+--- !u!114 &7807458773999734093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: This dialog node will continue on its own
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 1
+  continueDelayTime: 3
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 7705479451836844394}
+  spawnedDialogType: 0
+  overrideExistingNode: 0
+  deleteOverriden: 0
+--- !u!114 &7705479451836844394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: This dialog node is a dummy, it should not display
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 1
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 5757074094562293878}
+  spawnedDialogType: 0
+  overrideExistingNode: 0
+  deleteOverriden: 0
+--- !u!114 &5757074094562293878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af02a0fe82ef0ab4a9b7042b507e2ca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: This node requires a choice for you to move on
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogChoices:
+  - choiceText: I agree
+    choiceNode: {fileID: 8027544880386982102}
+  - choiceText: I disagree
+    choiceNode: {fileID: 1412129339430949034}
+  dialogChoiceNode: {fileID: 0}
+  overrideContinueOnClick: 1
+  spawnedDialogType: 0
+  spawnedChoiceText: 
+  allowDuplicateChoice: 0
+  allowEmptyChoice: 0
+  deleteDuplicate: 0
+--- !u!114 &8027544880386982102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: I'm glad that you agree
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 6199312969479087659}
+  spawnedDialogType: 0
+  overrideExistingNode: 0
+  deleteOverriden: 0
+--- !u!114 &1412129339430949034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: well, idk why you don't agree but nothin I can do about it so...
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 6199312969479087659}
+  spawnedDialogType: 3
+  overrideExistingNode: 0
+  deleteOverriden: 0
+--- !u!114 &6199312969479087659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5c393e1ff73894a9220d3022ef9c2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: This dialog will lead to something different depnding on variables set
+    in the dialog manager
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  defaultNode: {fileID: 3542256447735377143}
+  conditions:
+  - id: testVar
+    conditionType: 0
+    conditional: 0
+    value: 0
+    conditionalNode: {fileID: 2564134140772056205}
+  - id: testFlag
+    conditionType: 1
+    conditional: 6
+    value: 0
+    conditionalNode: {fileID: 2057579397532293117}
+  newNode:
+    id: 
+    conditionType: 1
+    conditional: 1
+    value: 4
+    dialogType: 0
+--- !u!114 &3542256447735377143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: This is the node you reach if none of the conditions were met
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 8186256075883198765}
+  spawnedDialogType: 0
+  overrideExistingNode: 0
+  deleteOverriden: 0
+--- !u!114 &2564134140772056205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: This is the node you reach if testVar is greater than 0
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 8186256075883198765}
+  spawnedDialogType: 0
+  overrideExistingNode: 0
+  deleteOverriden: 0
+--- !u!114 &2057579397532293117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: This is the node that displays when testFlag is true, and testVar is
+    not greater than 0
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 8186256075883198765}
+  spawnedDialogType: 0
+  overrideExistingNode: 0
+  deleteOverriden: 0
+--- !u!114 &8186256075883198765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6cb9d83e359d6e4a97adccc732d1537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: this dialog will lead to different nodes randomly
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  randomChoices:
+  - randomNode: {fileID: 3491509395341115463}
+    nodeWeight: 1
+  - randomNode: {fileID: 9037230709948006434}
+    nodeWeight: 1
+  newNodeType: 0
+  newNodeWeights: 1
+--- !u!114 &3491509395341115463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: This is the first random choice
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 1873235841597113426}
+  spawnedDialogType: 0
+  overrideExistingNode: 0
+  deleteOverriden: 0
+--- !u!114 &9037230709948006434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: This is the second random choice
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 1873235841597113426}
+  spawnedDialogType: 0
+  overrideExistingNode: 0
+  deleteOverriden: 0
+--- !u!114 &1873235841597113426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411799289139307332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745915482328224aaaa4c1d20556a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contents: That's all! Hope this example was helpful!
+  textBox: {fileID: 0}
+  charPerSec: -1
+  continueOnInput: 1
+  autoContinue: 0
+  continueDelayTime: 0
+  isDummy: 0
+  dialogStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextNode: {fileID: 0}
+  spawnedDialogType: 0
+  overrideExistingNode: 0
+  deleteOverriden: 0

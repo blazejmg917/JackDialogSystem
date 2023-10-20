@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7940830290688974383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2335766707186815622}
+  - component: {fileID: 3004998210368948748}
+  - component: {fileID: 962102692894833026}
+  - component: {fileID: 710337162348060031}
+  - component: {fileID: 7235356753586500622}
+  m_Layer: 0
+  m_Name: EmptyDialogManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2335766707186815622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940830290688974383}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3004998210368948748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940830290688974383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf9d9dbf99acbb741877a30fa75d450a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typewriter: {fileID: 962102692894833026}
+  inputHandler: {fileID: 710337162348060031}
+  varsHandler: {fileID: 7235356753586500622}
+  dialogObject: {fileID: 0}
+  dialogText: {fileID: 0}
+  continueText: {fileID: 0}
+  speakerNameText: {fileID: 0}
+  speakerNamePanel: {fileID: 0}
+  choicePanel: {fileID: 0}
+  choiceButton: {fileID: 0}
+  displayedObjects: []
+  currentDialog: {fileID: 0}
+  displayingDialog: 0
+  currentDialogRunning: 0
+  handlingInput: 0
+  canTakeInput: 0
+  dialogStart:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogEnd:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &962102692894833026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940830290688974383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6530777c2ad7fbb468266f36cd9bf1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+  test: 0
+  defaultTextBox: {fileID: 0}
+  textToType: 
+  charPerSec: 3
+--- !u!114 &710337162348060031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940830290688974383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d9e376cf7393794fa931905d2e550dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogContinueActions:
+  - m_UseReference: 0
+    m_Action:
+      m_Name: Element 0
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: dc122f29-f4c7-44fc-a191-fbc334836d9f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: f98ec5b2-0051-41fe-937b-b711894417e8
+        m_Path: <Keyboard>/space
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Element 0
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  canAcceptInput: 0
+--- !u!114 &7235356753586500622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940830290688974383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c1ed7757f9398488d4c650e83b4736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialVariables: []
+  initialFlags: []
